@@ -1,0 +1,63 @@
+****** View
+	@using (Html.BeginForm("ThemHoa", "Home", FormMethod.Post, new {enctype="multipart/form-data" }))
+	{
+		<div>
+			<input type="file" name="ImageUpload" onchange="ShowImage(this, document.getElementById('preImage'))"/> 
+
+			<img src="~/Assets/Images/cuc_1.jpg" width="200" height="200" id="preImage" />
+		</div>
+	}
+
+	
+
+	// tạo script để binding hình ảnh khi chọn ảnh trong thư mục
+	<script>
+    		function ShowImage(ImageUpload, preImageaaa) {
+        		if (ImageUpload.files && ImageUpload.files[0]) {
+            			var reader = new FileReader();
+            			reader.onload = function (e) {
+                			preImage.src = e.target.result;
+            			}
+            			reader.readAsDataURL(ImageUpload.files[0]);
+        		} 
+    		}
+	</script>
+
+
+****** Model
+	// Tạo thuộc tính lưu trữ hình ảnh, nhưng không lưu xuống CSDL
+
+        [NotMapped]
+        public HttpPostedFileBase ImageUpload { get; set; }
+
+
+
+****** Controller
+	void Create(Hoa Model)
+	try
+	{
+		// Kiểm tra có chọn hình ảnh hay không
+		if(Model.ImageUpload != null)
+                {
+			// VD: hình ảnh chọn là Images/hinh1.jpg
+			// Lấy ra tên của hình ảnh: hinh1
+			string fileName = Path.GetFileNameWithoutExtension(Model.ImageUpload.FileName);
+			
+			// Lấy ra đuôi mở rộng của hình ảnh
+			string extension = Path.GetExtension(Model.ImageUpload.FileName); 
+
+			// Gán dữ liệu vào Model để có thể lưu xuống DB
+			Model.Hinh = fileName + extension;	
+
+			// Lưu hình ảnh vào thư mục
+			Model.ImageUpload.SaveAs(Path.Combine(Server.MapPath("~/Assets/Images/"), fileName + extension));
+
+			// Lưu xuống DB
+			db.Hoas.Add(Model);
+			db.SaveChanges();
+                }
+	}
+	catch (Exception)
+	{
+                 
+	}

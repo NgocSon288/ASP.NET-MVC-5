@@ -1,0 +1,11 @@
+Thêm bảng Thành Viên(Member)
+Thêm bảng 26 chữ cái như Gmail
+Tạo DB phù hợp với người dùng đăng nhập bằng facebook, 
+Thêm bảng loại Notification
+Bảng có nhiều trang thái cho thêm trường định nghĩa trạng thái màu sắc, hình ảnh icon riêng biệt (text-danger, text-success...)
+Thêm bảng sản phẩm yêu thích,( có trái tim)
+Bảng quyền
+
+Thêm giới tính
+Ngày sinh
+Chọn phương thức thanh toán

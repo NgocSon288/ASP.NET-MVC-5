@@ -1,0 +1,52 @@
+	Truy cập vào 			https://developers.facebook.com/
+	
+	Đăng nhập
+
+	Tạo App
+
+	Lấy ID, Secret			Đưa vào Appsetting của ConfigurationManager
+
+	Cài đặt thư viện		Facebook
+
+	Cài đặt bootstrap social 	https://lipis.github.io/bootstrap-social/	bootstrap-social.css
+
+	Tạo ActionResult để login bằng facebook	
+
+	Tạo ActionResult để facebook callback, và get các thông tin user, đưa vào DB
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

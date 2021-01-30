@@ -1,0 +1,149 @@
+	*** View
+	<a class="btn btn-facebook" href="/Login/LoginFacebook">	
+		<i class="fa fa-facebook"></i>
+		Đăng nhập bằng facebook	
+	</a>
+
+
+
+--------------------------------------------------------------------------
+
+	*** Controller
+	
+	#region Login facebook
+
+        private Uri RedirectUri
+        {
+            get
+            {
+                var uriBuiler = new UriBuilder(Request.Url);
+                uriBuiler.Query = null;
+                uriBuiler.Fragment = null;
+                uriBuiler.Path = Url.Action("FacebookCallback");
+                return uriBuiler.Uri;
+            }
+        }
+
+        /// <summary>
+        /// Tạo action gọi đến facebook
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ActionResult> LoginFacebook()
+        {
+            var fb = new FacebookClient();
+            var loginUrl = fb.GetLoginUrl(new
+            {
+                client_id = ConfigurationManager.AppSettings["AppID"],
+                client_secret = ConfigurationManager.AppSettings["AppSecret"],
+                redirect_uri = RedirectUri.AbsoluteUri,
+                response_type = "code",
+                scope = "email",
+            });
+
+            return Redirect(loginUrl.AbsoluteUri);
+        }
+
+        /// <summary>
+        /// Tạo action để facebook gọi về, trung tên với Callback trên
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ActionResult> FacebookCallback(string code)
+        {
+            var fb = new FacebookClient();
+            dynamic result = fb.Post("oauth/access_token", new
+            {
+                client_id = ConfigurationManager.AppSettings["AppID"],
+                client_secret = ConfigurationManager.AppSettings["AppSecret"],
+                redirect_uri = RedirectUri.AbsoluteUri,
+                code = code
+            });
+
+            var accessToken = result.access_token;
+
+            if (!string.IsNullOrEmpty(accessToken))
+            {
+                fb.AccessToken = accessToken;
+		
+		// Get thông tin cần thiết
+                dynamic me = fb.Get("me?fields=first_name, middle_name,last_name,id,email");
+            }
+            else
+            {
+
+            }
+
+            return Redirect("/");
+        }
+
+        #endregion
+
+
+--------------------------------------------------------------------------
+
+	*** Model
+
+
+
+
+--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
