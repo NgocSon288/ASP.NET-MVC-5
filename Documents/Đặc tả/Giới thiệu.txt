@@ -1,0 +1,12 @@
+Dự án website bán hàng trực tuyến có các chức năng:
+
+Admin quản trị sản phẩm, đơn hàng và tin bài
+
+Khách hàng xem, tìm kiếm và mua sản phẩm
+
+Khách hàng có thể đăng nhập và xem danh sách đơn hàng đã mua
+
+Khách hàng có thể gửi liên hệ và xem thông tin công ty.
+
+Có 2 view cho khách hàng và cho quản trị, quản trị yêu cầu đăng nhập còn khách hàng thì
+mặc định là không.

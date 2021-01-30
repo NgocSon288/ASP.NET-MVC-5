@@ -1,0 +1,15 @@
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Service.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Service.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Common.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Data.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Model.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Common.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Data.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Data.dll.config
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Model.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\ElectronicShop.Model.dll.config
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.csprojAssemblyReference.cache
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.csproj.CopyComplete
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.pdb

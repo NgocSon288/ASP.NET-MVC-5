@@ -1,0 +1,6 @@
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Common\bin\Debug\ElectronicShop.Common.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Common\bin\Debug\ElectronicShop.Common.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Common\obj\Debug\ElectronicShop.Common.csprojAssemblyReference.cache
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Common\obj\Debug\ElectronicShop.Common.csproj.CoreCompileInputs.cache
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Common\obj\Debug\ElectronicShop.Common.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Common\obj\Debug\ElectronicShop.Common.pdb

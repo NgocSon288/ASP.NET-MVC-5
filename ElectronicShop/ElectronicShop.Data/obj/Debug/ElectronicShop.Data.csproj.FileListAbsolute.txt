@@ -1,0 +1,14 @@
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Data.dll.config
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Data.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Data.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Common.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\EntityFramework.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Common.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\EntityFramework.xml
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.csprojAssemblyReference.cache
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.csproj.CoreCompileInputs.cache
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.csproj.CopyComplete
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.pdb
