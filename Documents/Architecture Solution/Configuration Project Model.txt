@@ -1,0 +1,19 @@
+Extention: Tạo các file config FluentAPI thay vì dùng Attribute
+****************************************************************
+*** Bước 1: Tạo các folder:
+	+ Models: chứa các Domain class, ánh xạ đến các bảng của DB
+	+ Abstract: chứa các Abstract class, interface
+
+
+
+****************************************************************
+*** Bước 2: 
+	+ Tạo Interface IAuditable chứa các thuộc tính chung của Domain class như: CreatedDate, CreatedBy, UpdatedDate, UpdatedBy, MetaKeyword, MetaDescription, Status...
+	+ Tạo abstract class Auditable Implement lại Interface trên và định nghĩa các Attribute cho các thuộc tính
+
+
+****************************************************************
+*** Bước 3: Trong thư mục Models, tạo các Domain class, và kế thừa lại abstract class Auditable để có các thuộc tính chung
+
+
+****************************************************************

@@ -1,0 +1,92 @@
+
+***Bước 1: Cài đặt 6 Project trong 1 Solution Blank
+
+	+ Common: Class Library (.NET Framework)
+	+ Data: Class Library (.NET Framework)
+	+ Model: Class Library (.NET Framework)
+	+ Service: Class Library (.NET Framework)
+	+ UnitTest: Unit Test Project (.NET Framework)
+	+ Web: ASP.NET Web Application (.NET Framework)
+
+-----------------------------------------------------------
+
+*** Bước 2: Cài đặt các Packages cần thiết
+
+.Common
+
+.Data
+	+ EntityFramework
+
+.Model
+	+ EntityFramework
+
+.Service
+
+.UnitTest
+
+.Web
+	+ EntityFramework
+
+-----------------------------------------------------------
+
+*** Bước 3: References các projects lại với nhau & Build Solution
+
+.Common
+
+.Data
+	+ Common
+	+ Model
+
+.Model
+
+.Service
+	+ Common
+	+ Data
+	+ Model
+
+.UnitTest
+	+ Common
+	+ Data
+	+ Model
+	+ Service
+	+ Web
+
+.Web
+	+ Common
+	+ Data
+	+ Model
+	+ Service
+
+-----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

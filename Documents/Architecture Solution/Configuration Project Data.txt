@@ -1,0 +1,27 @@
+*** Extention:
+
+
+*************************************************************************
+*** Bước 1: Tạo các folder: 
+	+ Infrastructure: Chứa các giao tiếp cho interface và class
+		+ Disposable: giúp cài đặt phương thức tự động hủy
+		+ IDbFactory
+		+ IRepository: khai báo các phương thức thường dùng
+		+ IUnitOfWork
+
+	+ Repositories
+
+*************************************************************************
+*** Bước 2: Tạo class ElectronicShopDbContext kế thừa lại class DbContext
+
+	+ Tạo ConnectionString trong .Data và .Web
+<connectionStrings>
+    <add name="ElectronicShopConnection" connectionString="Server=.\SQLEXPRESS; Database=ElectronicShopDatabase; Integrated Security=True"/>
+  </connectionStrings> 
+*************************************************************************
+
+
+*************************************************************************
+
+
+*************************************************************************
