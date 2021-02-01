@@ -1,0 +1,161 @@
+
+*****************************************************************
+*** Bước 1: tạo folder cho .web
+	+ API
+	+ Assets
+		+ admin	
+		+ client
+	+ Script(Xóa hết bên trong)
+		+ plugins
+		+ spa
+	+ Infrastructure
+		+ Core
+		+ Extensions
+	
+	** Models giờ là thư mục có chức năng ViewModel AutoMap
+
+
+*****************************************************************
+*** Bước 2: trong thư mục Infrastructure/Core tạo ApiControllerBase kế thừa lớp ApiController để tất cả các Api kế thừa lại
+	+ Tạo Error Entity -> Repository -> Service tương ứng
+	+ Tạo ApiControllerBase chứa định dạng response trả về client
+
+
+*****************************************************************
+*** Bước 3: Cài đặt AutoFac để triển khai DI, cài các Package
+	+ Autofac
+	+ Autofac.Mvc5
+	+ Autofac.WebApi2
+	+ Microsoft.Owin.Host.SystemWeb để enable OWIN
+	
+*****************************************************************
+*** Bước 4: Tạo file Startup.cs(OWIN Startup class) để cấu hình DI, file này sẽ tự thực thi khi chương trình chạy
+
+
+
+
+	
+*****************************************************************
+*** Bước 5: Cài đặt AutoMapper	
+	+ Cài đặt Package AutoMapper 
+
+*****************************************************************
+*** Bước 6: Tạo các ViewModel để map từ Model <--> ViewModel	
+
+*****************************************************************
+*** Bước 7: Tạo folder Mappings
+	+ AutomapperConfiguration.cs để thực hiện map
+
+*****************************************************************
+*** Bước 7: Trong thư mục Infrastructure/Extension
+	+ EntityExtensions: để Mapping dữ liệu
+
+
+
+
+
+
+
+*****************************************************************
+*** Bước 8: Cài đặc chứng thực Identity, giúp đăng nhập bằng google, facebook, twitter, cần các Package
+	+ Microsoft.AspNet.Identity.EntityFramework
+	+ Microsoft.AspNet.Identity.Core
+	+ Microsoft.AspNet.Identity.OWIN
+	
+
+*****************************************************************
+*** Bước 9: vào .Model tạo 1 class ApplicationUser kế thừa từ class IdentityUser và cài Package để kế thừa IdentityUser
+	+ Microsoft.AspNet.Identity.EntityFramework
+
+** Khi kế thừa từ class IdentityUser thì ta đã có rất nhiều thuộc tính liên quan đến User đăng nhập đó
+
+*****************************************************************
+*** Bước 10: thêm các thuộc tính mà IdentityUser không có sẵng, và các Attribute
+
+*****************************************************************
+*** Bước 11: vào .Data cài Package để kế thừa từ IdentityDbContext<ApplicationUser>
+	+ Microsoft.AspNet.Identity.EntityFramework
+
+*****************************************************************
+*** Bước 12: tạo phương thức static Create() để tự tạo mới chính nó .Data
+public static ElectronicShopDbContext Create()
+{
+	return new ElectronicShopDbContext();
+}
+
+*****************************************************************
+*** Bước 13: Tạo class IdentityConfig trong .Web/App_Start
+
+*****************************************************************
+*** Bước 14: Tạo class Startup.Auth.cs trong .Web/App_Start để config Identity
+
+*****************************************************************
+*** Bước 15: Thực hiện Migration và update database
+
+*****************************************************************
+*** Bước 16: Tạo AccountController API để thực hiện chức năng đăng nhập
+		
+*****************************************************************
+*** Bước 17: Tạo dữ liệu mẫu trong Migration Seed
+		
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+*****************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

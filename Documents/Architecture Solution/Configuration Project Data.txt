@@ -4,22 +4,28 @@
 *************************************************************************
 *** Bước 1: Tạo các folder: 
 	+ Infrastructure: Chứa các giao tiếp cho interface và class
+		+ DbFactory: thực hiện Init DbConetext
 		+ Disposable: giúp cài đặt phương thức tự động hủy
 		+ IDbFactory
+		+ RepositoryBase: định nghịa các phương thức dùng đi dùng lại nhiều lần, để các class repository khác kế thừa lại, giúp ngắn code
 		+ IRepository: khai báo các phương thức thường dùng
-		+ IUnitOfWork
+		+ IUnitOfWork 
+		+ UnitOfWork
 
-	+ Repositories
+	+ Repositories: kế thừa RepositoryBase để khỏi viết lại code, chứa các class repository chỉ thực hiện query trên riêng class của nó
 
 *************************************************************************
 *** Bước 2: Tạo class ElectronicShopDbContext kế thừa lại class DbContext
 
 	+ Tạo ConnectionString trong .Data và .Web
 <connectionStrings>
-    <add name="ElectronicShopConnection" connectionString="Server=.\SQLEXPRESS; Database=ElectronicShopDatabase; Integrated Security=True"/>
-  </connectionStrings> 
+    <add name="ElectronicShopConnection" providerName="System.Data.SqlClient" connectionString="Server=.\SQLEXPRESS; Database=ElectronicShopDatabase; Integrated Security=True"/>
+  </connectionStrings>
 *************************************************************************
-
+*** Bước 3: Thực hiện Migration
+	+ enable-migrations: kiểm tra logic, connectionString, DB có tồn tại
+	+ add-migration: thêm migration, để giúp update db
+	+ update-database: thực hiện dùng migration mới nhất để update database
 
 *************************************************************************
 

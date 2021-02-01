@@ -12,3 +12,14 @@ C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data
 C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.csproj.CopyComplete
 C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.dll
 C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Model.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Model.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\ElectronicShop.Model.dll.config
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.Migrations.Inital_DB_Entity.resources
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.csproj.GenerateResource.cache
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.Migrations.Add_Errors_Table.resources
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Data\obj\Debug\ElectronicShop.Data.Migrations.Initial_Identity_User.resources

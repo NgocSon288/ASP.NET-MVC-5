@@ -13,3 +13,9 @@ C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Serv
 C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.csproj.CopyComplete
 C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.dll
 C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\obj\Debug\ElectronicShop.Service.pdb
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\EntityFramework.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\EntityFramework.xml
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\18521\OneDrive\Desktop\ASP.NET-MVC-5\ElectronicShop\ElectronicShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Service", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.UnitTest", "ElectronicShop.UnitTest\ElectronicShop.UnitTest.csproj", "{2A6B6179-A7C3-48CE-8A80-5C0B7BE6DB86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Web", "ElectronicShop.Web\ElectronicShop.Web.csproj", "{8FD2ECC9-33A1-4AB0-8FFD-421614E651CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2A6B6179-A7C3-48CE-8A80-5C0B7BE6DB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A6B6179-A7C3-48CE-8A80-5C0B7BE6DB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A6B6179-A7C3-48CE-8A80-5C0B7BE6DB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD2ECC9-33A1-4AB0-8FFD-421614E651CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD2ECC9-33A1-4AB0-8FFD-421614E651CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD2ECC9-33A1-4AB0-8FFD-421614E651CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD2ECC9-33A1-4AB0-8FFD-421614E651CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

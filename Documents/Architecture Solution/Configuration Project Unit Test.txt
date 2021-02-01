@@ -1,0 +1,62 @@
+
+ 
+*********************************************************************
+*** Bước 1: Cài đặt thư Package Moq
+
+*********************************************************************
+*** Bước 2: Tạo một Application Configuration File(App.config nếu chưa có)
+		*********************************************************************
+*** Bước 3: Tạo Các folder test tương ứng với các tầng
+	+ RepositoryTest
+	+ ServiceTest
+
+*********************************************************************
+*** Bước 4: Tạo class có hậu tố Test, để test vd:
+	+ PostCategoryRepositoryTest 	=>> Nằm trong RepositoryTest
+
+	+ Thêm Attribute TestClass
+
+	+ Tạo phương thức Initialize() có Attribute để cho nó chạy ngay khi chương trình chạy lần đầu tiên	
+
+*********************************************************************
+*** Bước 5: Tạo Method test
+
+[TestClass]
+public class ProductCategoryRepositoryTest
+{
+        IDbFactory dbFactory;                       				// Cung cấp cho IProductRepository để khởi tạo
+        IProductCategoryRepository productCategoryRepository;       		// Dung để test các phương thức của Repository
+        IUnitOfWork unitOfWork;                     				// Hỗ trợ test Repository, lưu data
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            dbFactory = new DbFactory();
+            productCategoryRepository = new ProductCategoryRepository(dbFactory);
+            unitOfWork = new UnitOfWork(dbFactory);
+        }
+
+        [TestMethod]
+        public void ProductCategory_Repository_Create()
+        {
+            ProductCategory productCategory = new ProductCategory();
+            productCategory.Name = "Product_Repository_Create";
+            productCategory.Alias = "Product_Repository_Create";
+
+            var result = productCategoryRepository.Add(productCategory);
+            unitOfWork.Commit();
+
+	    // Thỏa các điều kiện này thì Test OK
+            Assert.IsNotNull(result);
+            Assert.AreEqual(1, result.ID);
+        }
+
+        [TestMethod]
+        public void ProductCategory_Repository_GetAll()
+        {  
+            var result = productCategoryRepository.GetAll(); 
+             
+            Assert.AreEqual(1, result.Count());
+        }
+    }*********************************************************************
+		*********************************************************************

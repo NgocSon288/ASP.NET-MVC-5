@@ -1,0 +1,15 @@
+
+
+
+
+*************************************************************************
+*** Bước 1: 
+	+ Tạo Interface tương ứng với mỗi Repository, khai báo các services tương ứng với đối tượng đó
+	+ Tạo class implement Interface trên và khởi tạo các service đó, trong class có thể có nhiều Repository của các đối tượng khác nhau, có 1 UnitOfWork,... Tất cả dùng cơ chế Dependence Injection	
+
+
+*************************************************************************
+
+
+
+*************************************************************************

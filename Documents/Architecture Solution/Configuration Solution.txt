@@ -23,6 +23,8 @@
 .Service
 
 .UnitTest
+	+ Moq
+	+ EntityFramework
 
 .Web
 	+ EntityFramework

@@ -1,19 +1,16 @@
 ﻿using ElectronicShop.Model.Models;
-using System;
-using System.Collections.Generic;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ElectronicShop.Data
 {
-    public class ElectronicShopDbContext : DbContext
+    public class ElectronicShopDbContext : IdentityDbContext<ApplicationUser>
     {
         public ElectronicShopDbContext() : base("ElectronicShopConnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
+
         public DbSet<Footer> Footers { set; get; }
         public DbSet<Menu> Menus { set; get; }
         public DbSet<MenuGroup> MenuGroups { set; get; }
@@ -34,11 +31,18 @@ namespace ElectronicShop.Data
         public DbSet<Tag> Tags { set; get; }
 
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
+        public DbSet<Error> Errors { set; get; }
 
+        public static ElectronicShopDbContext Create()
+        {
+            return new ElectronicShopDbContext();
+        }
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-
+            // Framework Required
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId });
+            builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId);
         }
     }
 }
